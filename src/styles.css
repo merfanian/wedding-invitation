@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.start {
+  background-color: gray;
+  
+}
+
+.svg { 
+  width: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  color: black;
+}
+
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+button {
+  display: "block";
+  margin: "30px";
+  margin-right: "10px";
+  border: "none";
+  color: "white";
+  background-color: "#647DFF";
+  border-radius: "2px";
+  font-size: "15px";
+}
