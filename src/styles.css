@@ -38,8 +38,8 @@
 }
 
 .start .svg {
-  box-shadow: rgb(0, 0, 0, 0.7) 0px 6vh 5vh -1vh,
-              rgb(0, 0, 0, 0.4) 0px 2vh 1vh -1px,
+  box-shadow: rgb(0, 0, 0, 0.7) 0px 4vh 4vh -2vh,
+              rgb(0, 0, 0, 0.5) 0px 2vh 1vh -1px,
               rgb(0, 0, 0, 0.8) 1vh 0px 2vh -2vh;
   width: 100%!important;
   height: 100%!important;
