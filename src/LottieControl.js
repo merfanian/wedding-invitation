@@ -14,9 +14,11 @@ const LottieControl = (props) => {
       loop: false,
       autoplay: false,
 
+
       animationData: require(`./lotties/${props.name}.json`),
       rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
+        // preserveAspectRatio: "xMidYMid meet",
+        className:'svg'
       }
     });
 
@@ -25,6 +27,10 @@ const LottieControl = (props) => {
       const maxFrames = anim.totalFrames;
 
       const frame = (maxFrames / 100) * (scrollPosition / (duration / 100));
+
+      if(frame > maxFrames){
+        frame = maxFrames
+      }
 
       anim.goToAndStop(frame, true);
     }
@@ -41,7 +47,7 @@ const LottieControl = (props) => {
     };
   }, []);
 
-  return <div  ref={lottieRef}></div>;
+  return <div ref={lottieRef} className="lottie"></div>;
 };
 
 export default LottieControl;
