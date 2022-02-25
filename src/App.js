@@ -16,11 +16,7 @@ class App extends Component {
     console.log(url);
 
     const that = this;
-    fetch(url, {
-      crossDomain: true,
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    })
+    fetch(url)
       .then(function (response) {
         return response.json();
       })
