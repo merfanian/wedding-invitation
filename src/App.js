@@ -12,7 +12,7 @@ class App extends Component {
   };
   componentDidMount() {
     const id = window.location.pathname;
-    const url = "http://127.0.0.1:3000" + id;
+    const url = "http://127.0.0.1:8000" + id;
     console.log(url);
 
     const that = this;
